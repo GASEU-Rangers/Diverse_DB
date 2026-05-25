@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다이버스 이능력 데이터베이스</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>능력 데이터베이스</h1>
+
+    <div class="top-bar">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="이름, 능력, 기술 검색"
+      >
+
+      <select id="categoryFilter">
+        <option value="">전체 계열</option>
+        <option value="직공계">직공계</option>
+        <option value="방어계">방어계</option>
+        <option value="원소계">원소계</option>
+        <option value="버프계">버프계</option>
+        <option value="정신계">정신계</option>
+        <option value="소환계">소환계</option>
+        <option value="그 외">그 외</option>
+      </select>
+
+    </div>
+
+    <div id="result" class="card-grid"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
